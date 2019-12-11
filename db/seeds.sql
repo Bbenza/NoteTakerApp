@@ -3,6 +3,7 @@ USE notes_db;
 INSERT INTO notes
   (title, note)
 VALUES
+
   ('Food time', 'Around 12:12 I have to eat with my friends at the restaurant');
 
 INSERT INTO notes

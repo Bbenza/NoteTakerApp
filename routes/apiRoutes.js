@@ -18,6 +18,7 @@ router.post("/api/addNote", function(req, res) {
   });
 });
 
+
 //Update existing Note
 router.post("/api/addNote/:noteId", function(req, res) {
   console.log("req.body:", req.body);

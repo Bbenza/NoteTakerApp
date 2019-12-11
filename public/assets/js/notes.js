@@ -14,11 +14,12 @@ $(document).ready(function() {
   $("i.fa-pencil").popover();
   editPopOverShow();
   $("i.fa-save").popover();
-  /*******************/
+  /*****************/
 
   function getRecords(route) {
     let apiUrl = `/api/${route}`,
       notesList = $(".list-group");
+      
 
     $.ajax({
       url: apiUrl,
@@ -26,9 +27,9 @@ $(document).ready(function() {
     }).then(function(data) {
       console.log(data);
       jQuery.each(data, function(i, obj) {
-        if (route === "notes") {
+        if (route == "notes") {
           notesList.append(`<li id="${obj.id}" class="list-group-item ui-state-default"><i class="fa fa-arrows-v" aria-hidden="true"></i>
-                                <span>${obj.title}</span><i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                                <span>${obj.note}</span><i class="fa fa-trash text-danger" aria-hidden="true"></i>
                                 </li>`);
 
           // object data to LI element

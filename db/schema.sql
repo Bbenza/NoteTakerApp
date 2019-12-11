@@ -3,6 +3,7 @@ CREATE DATABASE notes_db;
 USE notes_db;
 
 -- Create the quotes table
+
 CREATE TABLE notes
 (
   id INT NOT NULL AUTO_INCREMENT,
